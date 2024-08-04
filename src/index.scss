@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.modalContainer {
+  width: 50%;
+  height: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transform: translate(50%, 40%);
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.handle {
+  position: relative;
+  background: white;
+  width: 15px; /* Adjust the size as needed */
+  height: 15px;
+}
+
+.customNode {
+  background: rgba(255, 255, 255, 0.521);
+  border-radius: 20px;
+  border: 1px solid darkgray;
+  min-width: 200px;
+  min-height: 80px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem 1rem 1rem;
+  position: relative;
+}
+
+.nodeHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  color: #6a647c;
+  margin-bottom: 1rem;
+  align-items: center;
+  .nodeHeaderTitle {
+    display: flex;
+    gap: 5px;
+  }
+}
+.nodeBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
